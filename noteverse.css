@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background:  rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    /*flex-direction: column;*/
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.toggle-buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: transparent; /* Set the background to transparent */
+    color: #007BFF; /* Text color */
+    
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.toggle-buttons button.active {
+    background-color: transparent; /* Set the background to transparent */
+    border-color: #0056b3; /* Border color for the active button */
+    color: #0056b3; /* Text color for the active button */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: #0056b3;
+}
+
+form.hidden {
+    display: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.developer-details {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin-right: 20px; /* Take up available space */
+    padding: 20px;
+    background-color: #fff; /* Background color for developer details */
+    color: #000; /* Text color for developer details */
+    border-radius: 10px;
+}
+
+.developer-details h2 {
+    text-align: center;
+}
+
+.developer-details p {
+    margin: 10px 0;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll; /* Enable horizontal scrolling for the slider */
+    scrollbar-width: none; /* Hide scrollbars */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbars in WebKit browsers (Safari, Chrome) */
+}
+
+.slide {
+    flex: 0 0 100px; /* Set the width of each slide */
+    padding: 20px;
+    margin-right: 20px; /* Add spacing between slides */
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Add slide transition */
+}
+
+.slide:last-child {
+    margin-right: 0; /* Remove margin for the last slide */
+}
+
+.slide:hover {
+    transform: scale(1.05); /* Add hover effect to scale the slide */
+}
+
+
+/* Style the form groups */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style the labels */
+.form-group label {
+
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Style the selects and inputs */
+.form-group select,
+.form-group input[type="date"] {
+    flex: 1;
+    width: 100%; /* Make the date input full width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
